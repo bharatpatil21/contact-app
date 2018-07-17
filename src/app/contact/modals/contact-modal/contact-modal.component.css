@@ -1,0 +1,25 @@
+.dialog-close-action__block {
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.dialog-header {
+  float: left;
+  font-weight: 600;
+}
+
+.dialog-close-action {
+  text-align: right;
+  margin: 0px 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.info-action-btn {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}

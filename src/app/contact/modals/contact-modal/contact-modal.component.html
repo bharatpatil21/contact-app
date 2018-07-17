@@ -1,0 +1,65 @@
+<div class="dialog-close-action__block">
+  <span class="dialog-header" *ngIf="!isSelectedContact">Add Contact</span>
+  <span class="dialog-header" *ngIf="isSelectedContact">Edit {{contactView.firstName}} {{contactView.lastName}}</span>
+  <span (click)="onCancelClick()" class="dialog-close-action" cdk-focus-initial>X</span>
+</div>
+<div>
+  <form name="addContactForm" (ngSubmit)="f.form.valid && contactDetail()" #f="ngForm">
+    <div class="contact-information">
+      <div class="row">
+        <div class="col col-sm-6">
+          <div class="form-group">
+            <div class="input-lable">First Name
+              <span class="required">*</span>
+            </div>
+            <input type="text" [(ngModel)]="contact.firstName" #firstName="ngModel" name="firstName" required maxlength="20" class="form-control input-underline input-lg">
+            <div *ngIf="firstName.errors?.required && (firstName.dirty || firstName.touched || f.submitted)" class="has-error">Please enter first name</div>
+          </div>
+        </div>
+        <div class="col col-sm-6">
+          <div class="form-group">
+            <div class="input-lable">Last Name
+              <span class="required">*</span>
+            </div>
+            <input type="text" [(ngModel)]="contact.lastName" #lastName="ngModel" name="lastName" required maxlength="20" class="form-control input-underline input-lg">
+            <div *ngIf="lastName.errors?.required && (lastName.dirty || lastName.touched || f.submitted)" class="has-error">Please enter last name</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm-8">
+          <div class="form-group">
+            <div class="input-lable">Phone No
+              <span class="required">*</span>
+            </div>
+            <input type="text" [(ngModel)]="contact.phoneNo" #phoneNo="ngModel" name="phoneNo"
+              required maxlength="20" class="form-control input-underline input-lg" pattern="^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$">
+            <div *ngIf="phoneNo.errors?.required && (phoneNo.dirty || phoneNo.touched || f.submitted)"
+              class="has-error">Please enter phone no</div>
+            <div *ngIf="phoneNo.errors?.pattern" class="has-error">Please enter valid phone no</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm-12">
+          <div class="form-group">
+            <div class="input-lable">Email
+              <span class="required">*</span>
+            </div>
+            <input type="text" [(ngModel)]="contact.email" #email="ngModel" name="email" required maxlength="30" class="form-control input-underline input-lg"
+              pattern="^([a-zA-Z0-9_\-\.\+]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+            <div *ngIf="email.errors?.required && (email.dirty || email.touched || f.submitted)" class="has-error">Please enter email</div>
+            <div *ngIf="email.errors?.pattern" class="has-error">Please enter valid last name</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-sm-12">
+        <button type="submit" ngClass="btn rounded-btn save-btn info-action-btn" *ngIf="!isSelectedContact">Add Contact</button>
+        <button type="submit" ngClass="btn rounded-btn save-btn info-action-btn" *ngIf="isSelectedContact">Update Contact</button>
+      </div>
+    </div>
+  </form>
+</div>

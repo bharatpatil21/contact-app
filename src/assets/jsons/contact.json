@@ -1,0 +1,13 @@
+{
+  "statusCode": "200",
+  "data": {
+    "contact": {
+        "id": "1",
+        "first_name": "abc",
+        "last_name": "abc1",
+        "email": "abc@gmail.com",
+        "phone_no": "12312412341",
+        "status": true
+      }
+  }
+}

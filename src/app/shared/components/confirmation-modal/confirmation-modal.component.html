@@ -1,0 +1,16 @@
+<div *ngIf="data.title">
+  <h1 mat-dialog-title>
+    <span [ngClass]="{'title-info': data.contentType ==='info', 'title-warning': data.contentType === 'warning', 'title-success': data.contentType === 'success'}">{{data.title}}</span>
+  </h1>
+</div>
+<div mat-dialog-content *ngIf="data.content">
+  <p>{{data.content}}</p>
+</div>
+<div mat-dialog-actions class="dialog-actions-block">
+  <div (click)="onOkClick()" class="confirm-action-btn">
+    <span>OK</span>
+  </div>
+  <div (click)="onCancelClick()" class="confirm-action-btn btn-border-left">
+    <span>CANCEL</span>
+  </div>
+</div>

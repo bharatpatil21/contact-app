@@ -1,0 +1,47 @@
+.contact {
+  width: 60%;
+  display: block;
+  margin: auto;  
+}
+
+.contact__block {
+  margin-bottom: 20px;
+}
+
+.contact__title {
+  font-size: 20px;
+  color: #454343;
+  font-weight: 500;
+}
+
+.contact__row {
+  margin-bottom: 10px;
+  padding: 15px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.contact__active {
+  color: #02df02;
+}
+
+.contact__inactive {
+  color: #f54e4e;
+}
+
+.contact__action-block {
+  padding: 0px;
+}
+
+.contact__action {
+  font-size: 20px;
+  padding: 0px 7px;
+}
+
+.add-contact {
+  font-size: 23px;
+  color: #6189fc;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+}

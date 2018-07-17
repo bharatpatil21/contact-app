@@ -1,0 +1,87 @@
+{
+  "statusCode": "200",
+  "data": {
+    "contacts": [
+      {
+        "id": "1",
+        "first_name": "abc",
+        "last_name": "abc1",
+        "email": "abc@gmail.com",
+        "phone_no": "12312412341",
+        "status": true
+      },
+      {
+        "id": "2",
+        "first_name": "xyz",
+        "last_name": "xyz1",
+        "email": "xyz@gmail.com",
+        "phone_no": "12312412341",
+        "status": false
+      },
+      {
+        "id": "3",
+        "first_name": "lmn",
+        "last_name": "lmn1",
+        "email": "lmn@gmail.com",
+        "phone_no": "12312412341",
+        "status": true
+      },
+      {
+        "id": "4",
+        "first_name": "abc",
+        "last_name": "abc1",
+        "email": "abc@gmail.com",
+        "phone_no": "12312412341",
+        "status": true
+      },
+      {
+        "id": "5",
+        "first_name": "xyz",
+        "last_name": "xyz1",
+        "email": "xyz@gmail.com",
+        "phone_no": "12312412341",
+        "status": false
+      },
+      {
+        "id": "6",
+        "first_name": "lmn",
+        "last_name": "lmn1",
+        "email": "lmn@gmail.com",
+        "phone_no": "12312412341",
+        "status": true
+      },
+      {
+        "id": "7",
+        "first_name": "lmn",
+        "last_name": "lmn1",
+        "email": "lmn@gmail.com",
+        "phone_no": "12312412341",
+        "status": true
+      },
+      {
+        "id": "8",
+        "first_name": "abc",
+        "last_name": "abc1",
+        "email": "abc@gmail.com",
+        "phone_no": "12312412341",
+        "status": true
+      },
+      {
+        "id": "9",
+        "first_name": "xyz",
+        "last_name": "xyz1",
+        "email": "xyz@gmail.com",
+        "phone_no": "12312412341",
+        "status": false
+      },
+      {
+        "id": "10",
+        "first_name": "lmn",
+        "last_name": "lmn1",
+        "email": "lmn@gmail.com",
+        "phone_no": "12312412341",
+        "status": true
+      }
+    ]
+  }
+}
