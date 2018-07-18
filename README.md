@@ -12,6 +12,7 @@ Evolent Health - Contact Module for manage contact list.
 - Add contact
 - Edit contact
 - Delete contact
+- Reusable component(confirmation component)
 - Try to good architect/folder structure.
 
 ### How to start
