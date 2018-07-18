@@ -1,7 +1,8 @@
 .contact {
   width: 60%;
   display: block;
-  margin: auto;  
+  margin: auto;
+  margin-top: 80px;
 }
 
 .contact__block {
@@ -17,8 +18,14 @@
 .contact__row {
   margin-bottom: 10px;
   padding: 15px;
-  height: 50px;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.contact__row:hover {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
 }
 
 .contact__active {

@@ -1,7 +1,7 @@
 <div class="dialog-close-action__block">
   <span class="dialog-header" *ngIf="!isSelectedContact">Add Contact</span>
   <span class="dialog-header" *ngIf="isSelectedContact">Edit {{contactView.firstName}} {{contactView.lastName}}</span>
-  <span (click)="onCancelClick()" class="dialog-close-action" cdk-focus-initial>X</span>
+  <span (click)="onCancelClick()" class="dialog-close-action" cdk-focus-initial><i class="fa fa-times" aria-hidden="true"></i></span>
 </div>
 <div>
   <form name="addContactForm" (ngSubmit)="f.form.valid && contactDetail()" #f="ngForm">

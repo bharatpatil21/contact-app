@@ -6,23 +6,26 @@
       <i class="fa fa-plus-circle"></i>
     </span>
   </div>
-  
-  <div>
-    <mat-card *ngFor="let contact of contactList; let i = index" class="contact__row">
-      <div class="row">
-        <div class="col-sm-3">{{contact.first_name}} {{contact.last_name}}</div>
-        <div class="col-sm-3">{{contact.email}}</div>
-        <div class="col-sm-3">{{contact.phone_no}}</div>
-        <div class="col-sm-2">
-          <span *ngIf="contact.status" class="contact__active">Active</span>
-          <span *ngIf="!contact.status" class="contact__inactive">Inactive</span>
-        </div>
-        <div class="col-sm-1 contact__action-block">
-          <i class="fa fa-pencil contact__action" title="Edit" (click)="editContact(contact)"></i>
-          <i class="fa fa-trash-o contact__action" title="Delete" (click)="deleteContact(contact)"></i>
-        </div>
-      </div>
-    </mat-card>
-  </div>
 
+  <div class="contact-list__block">
+    <div class="row contact__row" *ngFor="let contact of contactList; let i = index">
+      <div class="col-sm-3">
+        {{contact.first_name}} {{contact.last_name}}
+      </div>
+      <div class="col-sm-3">
+        {{contact.email}}
+      </div>
+      <div class="col-sm-3">
+        {{contact.phone_no}}
+      </div>
+      <div class="col-sm-2">
+        <span *ngIf="contact.status" class="contact__active">Active</span>
+        <span *ngIf="!contact.status" class="contact__inactive">Inactive</span>
+      </div>
+      <div class="col-sm-1 contact__action-block">
+        <i class="fa fa-pencil contact__action" title="Edit" (click)="editContact(contact)"></i>
+        <i class="fa fa-trash-o contact__action" title="Delete" (click)="deleteContact(contact)"></i>
+      </div>
+    </div>
+  </div>
 </div>
